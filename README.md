@@ -1,11 +1,11 @@
 # ML Test
 
-## Project setup
+## Project Setup
 
-**Front:**
+**Steps:**
 
 ```
-:
   - Go to the front folder
   - npm start
+  - :fire: Test it! :fire:
 ```
