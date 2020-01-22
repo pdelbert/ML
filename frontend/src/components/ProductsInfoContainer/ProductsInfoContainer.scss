@@ -1,0 +1,59 @@
+.prod-container {
+    .prod-row {
+        display: flex;
+        margin: 32px;
+        .prod-image {
+            display: flex;
+            flex: 3;
+            img {
+                max-width: 400px;
+            }
+        }
+        .prod-info {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            &_descrip {
+                font-size: 14px;
+                margin: 32px 0 16px;
+            }
+            &_title {
+                font-size: 24px;
+                margin-bottom: 32px;
+            }
+            &_price {
+                font-size: 46px;
+                margin-bottom: 32px;
+            }
+            &_button {
+                button {
+                    background: $ml-blue;
+                    border: transparent;
+                    border-radius: 5px;
+                    color: $ml-white;
+                    outline: none;
+                    padding: 7px 10px;
+                    width: 100%;
+                }
+            }
+        }
+        .prod-descrip {
+            display: flex;
+            flex-direction: column;
+            margin-top: 32px;
+            &_title {
+                color: $ml-dark-gray;
+                font-size: 20px;
+                height: 32px;
+                margin-bottom: 32px;
+            }
+            &_content {
+                color: $ml-medium-gray;
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 32px;
+                text-align: justify;
+            }
+        }
+    }
+}

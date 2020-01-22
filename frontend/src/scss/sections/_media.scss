@@ -1,0 +1,23 @@
+@media(max-width: 980px) {
+    .container {
+        padding: 0;
+        header {
+            padding: 0 15px;
+        }
+        &-inner {
+            .prod-container {
+                .prod-row,
+                .prod-descrip {
+                    width: 100%;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 10px 0 0;
+                }
+                .prod-descrip {
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+}

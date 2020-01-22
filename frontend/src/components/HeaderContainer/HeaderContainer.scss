@@ -1,0 +1,46 @@
+header {
+    height: 53px;
+    width: 100%;
+    background: $ml-yellow;
+    .container {
+        height: 100%;
+        @include flex-center;
+        .search-container {
+            width: 100%;
+            @include flex-center;
+            &_form {
+                max-width: 100%;
+                padding: 0 0 0 15px;
+                width: 100%;
+                @include flex-center;
+                input {
+                    border: 1px solid $ml-lighter-gray;
+                    border-top-left-radius: 2px;
+                    border-bottom-left-radius: 2px;
+                    height: 32px;
+                    outline: none;
+                    padding: 8px;
+                    width: 100%;
+                }
+                a {
+                    border-top-right-radius: 2px;
+                    border-bottom-right-radius: 2px;
+                    background: $ml-lighter-gray;
+                    border: 1px solid transparent;
+                    cursor: pointer;
+                    height: 32px;
+                    margin: 0;
+                    padding: 0 4px;
+                    width: 32px;
+                    @include flex-center;
+                    &.disable {
+                        pointer-events: none;
+                    }
+                    svg {
+                        color: $ml-light-gray;
+                    }
+                }
+            }
+        }
+    }
+}

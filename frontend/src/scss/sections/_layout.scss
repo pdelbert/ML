@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif, sans-serif;
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background-color: $ml-lighter-gray;
+}
+
+:focus {
+    outline: none;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}
+
+.container {
+    float: none;
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 15px;
+    width: 100%;
+    .breadcrumb {
+        padding: 10px 0;
+        span {
+            font-size: 12px;
+            position: relative;
+            &:not(:last-child) {
+                margin-right: 20px;
+                &:before {
+                    content: '>';
+                    color: $ml-light-gray;
+                    right: 0;
+                    top: 0;
+                    transform: translateX(150%);
+                    position: absolute;
+                }
+            }
+            &.active {
+                font-weight: bold;
+            }
+            a {
+                color: $ml-light-gray;
+                text-decoration: none;
+            }
+        }
+    }
+    &-inner {
+        background-color: $ml-white;
+        height: auto;
+        margin-bottom: 10px;
+        min-height: 200px;
+        padding: 10px;
+        width: 100%;
+    }
+}
