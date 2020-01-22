@@ -7,5 +7,5 @@
 ```
   - Go to the front folder
   - npm start
-  - :fire: Test it! :fire:
+  -  Test it!
 ```
