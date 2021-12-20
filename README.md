@@ -7,5 +7,5 @@
 ```
   - Go to the front folder
   - npm start
-  -  Test it!
+  -  Test it!...
 ```
